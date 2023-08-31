@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amir MohammadiK Design Portfolio</title>
+
   <style>
     body {
       font-family: sans-serif;
@@ -67,8 +67,8 @@
 </head>
 <body>
   <header>
-    <h1>Amir MohammadiK Design Portfolio</h1>
-    <p>Welcome to my portfolio showcasing my 3D CAD Models</p>
+    <h1>Amir mohammadikarbalaei</h1>
+    <p>Welcome to my portfolio showcasing some of my 3D CAD Models</p>
   </header>
   <div class="container">
     <section class="section">
@@ -103,7 +103,7 @@
           </div>
         <div class="col-md-4">
           <div class="model">
-            <iframe width="100%" height="500" src="https://a360.co/45SJ3Nw"></iframe>
+            <iframe width="100%" height="500" src="https://a360.co/3PfCSgN"></iframe>
             <div class="model-description">
               <h3>Smart Watch Charging Stand</h3>
               <p>A protective case design for hard drives.</p>
@@ -112,7 +112,7 @@
         </div>
         <div class="col-md-4">
           <div class="model">
-            <iframe width="100%" height="500" src="https://a360.co/3PfCSgN"></iframe>
+            <iframe width="100%" height="500" src="https://a360.co/3YWvpq4"></iframe>
             <div class="model-description">
               <h3>Whatch Stand</h3>
               <p>A custom design for a watch stand designed specifically for 3D printing</p>
@@ -157,9 +157,29 @@
       </div>
     </div>
   </section>
-  </div>
-  <footer>
-    <p>Contact me at a.mohammadikarbalaei@gmail.com | Follow me on <a href="#">LinkedIn</a></p>
-  </footer>
+</div>
+<footer>
+  <p>Contact me at a.mohammadikarbalaei@gmail.com | Follow me on <a href="www.linkedin.com/in/amir-mohammadikarbalaei-65b958193">LinkedIn</a></p>
+</footer>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function() {
+  // Animate the header
+  $("header").fadeIn(3000);
+
+  // Slide the models in
+  $(".model").hover(function() {
+    $(this).animate({
+      height: "600px"
+    }, 300);
+  }, function() {
+    $(this).animate({
+      height: "500px"
+    }, 300);
+  });
+});
+</script>
 </html>
