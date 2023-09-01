@@ -85,10 +85,20 @@
       background-color: #333;
       color: #fff;
     }
+    .slider-container {
+      position: relative;
+    }
 
+    /* Style individual slides (adjust as needed) */
+    .slide img {
+      width: 50%;
+      height: auto;
+    }
 
    
   </style>
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
   <header>
@@ -187,29 +197,56 @@
     </div>
   </section>
 </div>
+<div class="slider-container">
+  <!-- Add individual slides here -->
+  <div class="slide"><img src="Mars-Rover-Wheel.jpg" alt="Slide 1"></div>
+  <div class="slide"><img src="Mars-Rover-Wheel.jpg" alt="Slide 2"></div>
+  <div class="slide"><img src="release-mechanism.jpeg" alt="Slide 3"></div>
+</div>
 <footer>
+  
   <p>Contact me at a.mohammadikarbalaei@gmail.com | Follow me on <a href="https://www.linkedin.com/in/amir-mohammadikarbalaei-65b958193">LinkedIn</a></p>
 </footer>
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"></script>
-<script>
-$(document).ready(function() {
-  // Animate the header
-  //$("header").fadeIn(3000);
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
 
-  // Slide the models in
-  $(".model-description").hover(function() {
-    $(this).animate({
-      height: "200px"
-    }, 300);
-  }, function() {
-    $(this).animate({
-      height: "30px"
-    }, 300);
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+
+
+
+<script>
+  $(document).ready(function() {
+    // Animate the header
+    //$("header").fadeIn(3000);
+
+    // Slide the models in
+    $(".model-description").hover(function() {
+      $(this).animate({
+        height: "200px"
+      }, 300);
+    }, function() {
+      $(this).animate({
+        height: "30px"
+      }, 300);
+    });
+
+    // Initialize the Slick Carousel
+    $(".slider-container").slick({
+      slidesToShow: 3,
+      infinite: true,
+      slidesToScroll: 3,
+      autoplay: true,
+      autoplaySpeed: 300,
+      arrows: false,
+      dots: true,
+    });
+    
   });
-  
-});
 </script>
+</body>
 </html>
