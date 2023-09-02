@@ -14,23 +14,11 @@ header {
   
 }
 
+video {
+  border: none;
+  outline: none;
+}
 
-/* Style the video */
-.headervideo {
-  position: relative;
-  
-  width: 50%;
-  height: auto;
-  z-index: 0;
-}
-.header video {
-  position: relative;
-  
-  width: 20%;
-  height: auto;
-  z-index: 0;
-  
-}
 .parent-container{
   position: middle;
   
@@ -40,11 +28,14 @@ header {
 
 
 
-
 }
 
-
-
+.rounded-video {
+  border-radius: 30%; 
+  /* Adjust the value as needed for your desired corner radius */
+  width:"50%"; 
+  height:"auto" ;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -134,10 +125,10 @@ footer {
 }
 
 .slider-carousel {
-  max-width: 600px; /* Adjust the width as needed */
+  max-width: 40%; /* Adjust the width as needed */
   margin: 0 auto;
   margin-top: 20px;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   z-index: -1;
 
 }
