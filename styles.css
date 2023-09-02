@@ -95,12 +95,15 @@ footer {
   z-index: 10;
   font-size: 20px;
   top: 50%;
-  left: 400px;
+  left: 50%;
+  transform: translateX(-50%);
+  left: 50%;
   font-weight: 700;
 }
 
 .navigation-buttons .next {
-  right: -400px;
+  left: 50%;
+  transform: translateX(-50%);
   position: relative;
   font-size: 25px;
   z-index: 10;
@@ -157,6 +160,5 @@ footer {
   justify-content: center;
   align-items: center;
   color: rgb(255, 255, 255);
-  background: rgba(0, 0, 0, 0.3);
   height: 35px;
 }
