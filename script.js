@@ -3,15 +3,18 @@
 
 $(document).ready(function() {
 
-    $(".model-description").hover(function() {
-        $(this).animate({
-        height: "200px"
-        }, 300);
-    }, function() {
-        $(this).animate({
-        height: "30px"
-        }, 300);
-    });
+    $(".model-description").hover(
+        function() {
+            $(this).stop().animate({
+                height: "200px"
+            }, 300);
+        },
+        function() {
+            $(this).stop().animate({
+                height: "30px"
+            }, 300);
+        }
+    );
 
     // Initialize the Slick Carousel
     $(".slider-container").slick({
